@@ -1,13 +1,17 @@
 <?php
 
-namespace AppTest\Action;
+namespace AppTest\Action\Home;
 
-use App\Action\HomePageAction;
+use App\Action\Home\Service;
 use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequest;
 use Zend\Expressive\Router\RouterInterface;
 
-class HomePageActionTest extends \PHPUnit_Framework_TestCase
+
+/**
+ * @author Diego Vilarinho <contato@diegovilarinho.com.br>
+ */
+class ServiceTest extends \PHPUnit_Framework_TestCase
 {
     /** @var RouterInterface */
     protected $router;
@@ -19,9 +23,12 @@ class HomePageActionTest extends \PHPUnit_Framework_TestCase
 
     public function testResponse()
     {
-        $homePage = new HomePageAction($this->router->reveal(), null);
-        $response = $homePage(new ServerRequest(['/']), new Response(), function () {
-        });
+        $homeService = new Service();
+        $response = $homeService(
+            new ServerRequest(['/api/v1/contents/home']), 
+            new Response(), 
+            function () {}
+        );
 
         $this->assertTrue($response instanceof Response);
     }

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Action;
+namespace App\Action\Logout;
 
 use Zend\Diactoros\Response\JsonResponse;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 use Firebase\JWT\JWT;
 
-class Logout
+class Service
 {
     public function __invoke(Request $request, Response $response, callable $next = null)
     {

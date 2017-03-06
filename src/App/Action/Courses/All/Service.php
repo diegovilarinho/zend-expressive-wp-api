@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Action;
+namespace App\Action\Courses\All;
 
 use Zend\Diactoros\Response\JsonResponse;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
-class CoursesList
+class Service
 {
     public function __invoke(Request $request, Response $response, callable $next = null)
     {

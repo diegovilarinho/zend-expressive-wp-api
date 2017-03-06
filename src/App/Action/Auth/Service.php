@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Action;
+namespace App\Action\Auth;
 
 use Zend\Stratigility\MiddlewareInterface;
 use Zend\Diactoros\Response\JsonResponse;
@@ -8,7 +8,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 use Firebase\JWT\JWT;
 
-class Auth implements MiddlewareInterface
+class Service implements MiddlewareInterface
 {
     public function __invoke(Request $request, Response $response, callable $out = null)
     {
@@ -86,11 +86,5 @@ class Auth implements MiddlewareInterface
         }
 
         return true;
-    }
-
-
-    public function check_if_token_is_blacklisted($token)
-    {
-        
     }
 }

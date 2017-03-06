@@ -83,7 +83,7 @@ $table_prefix  = 'wp_akloud_api_';
  *
  * @link https://codex.wordpress.org/pt-br:Depura%C3%A7%C3%A3o_no_WordPress
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 define( 'WP_AUTO_UPDATE_CORE', false );
 
