@@ -8,6 +8,13 @@ use Psr\Http\Message\ResponseInterface as Response;
 
 class Service
 {
+    /**
+     * @SWG\Get(
+     *     path="/api/v1/contents/home",
+     *     @SWG\Response(response="200", description="Home page json data"),
+     *     @SWG\Response(response="403", description="No content has been entered on this page"),
+     * )
+     */
     public function __invoke(
         Request $request, 
         Response $response, 
@@ -330,7 +337,7 @@ class Service
             return new JsonResponse([
                 'error' => 'akl_page_empty_content',
                 'errorMessage' => __('No content has been entered on this page', 'wac-api'),
-            ], 403);
+            ], 401);
         }
 
         return new JsonResponse($responseData);

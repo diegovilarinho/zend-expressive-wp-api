@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "673eb31a21fbaae84b13a32f24372fa0",
+    "content-hash": "21b1fd18dd925f5b269aff90afa499f2",
     "packages": [
         {
             "name": "aura/router",
@@ -85,6 +85,128 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "doctrine/annotations",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/54cacc9b81758b14e3ce750f205a393d52339e97",
+                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "time": "2017-02-24T16:22:25+00:00"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "lexer",
+                "parser"
+            ],
+            "time": "2014-09-09T13:34:57+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -274,6 +396,61 @@
                 "response"
             ],
             "time": "2016-09-25T13:30:27+00:00"
+        },
+        {
+            "name": "neomerx/cors-psr7",
+            "version": "v1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neomerx/cors-psr7.git",
+                "reference": "cc0413d6843ca27f90d15dbaf3bc6f9f972476f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neomerx/cors-psr7/zipball/cc0413d6843ca27f90d15dbaf3bc6f9f972476f0",
+                "reference": "cc0413d6843ca27f90d15dbaf3bc6f9f972476f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "psr/http-message": "^1.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "^4.8",
+                "scrutinizer/ocular": "^1.1",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Neomerx\\Cors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "neomerx",
+                    "email": "info@neomerx.com"
+                }
+            ],
+            "description": "Framework agnostic (PSR-7) CORS implementation (www.w3.org/TR/cors/)",
+            "homepage": "https://github.com/neomerx/cors-psr7",
+            "keywords": [
+                "Cross Origin Resource Sharing",
+                "Cross-Origin Resource Sharing",
+                "cors",
+                "neomerx",
+                "psr-7",
+                "psr7",
+                "w3.org",
+                "www.w3.org"
+            ],
+            "time": "2016-08-03T16:32:06+00:00"
         },
         {
             "name": "psr/container",
@@ -555,6 +732,105 @@
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
             "time": "2017-03-02T15:23:30+00:00"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v3.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "8c71141cae8e2957946b403cc71a67213c0380d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/8c71141cae8e2957946b403cc71a67213c0380d6",
+                "reference": "8c71141cae8e2957946b403cc71a67213c0380d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-01-02T20:32:22+00:00"
+        },
+        {
+            "name": "tuupola/cors-middleware",
+            "version": "0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tuupola/cors-middleware.git",
+                "reference": "db69d8e67b99570b16e8cd5f78c423ed1167cb21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tuupola/cors-middleware/zipball/db69d8e67b99570b16e8cd5f78c423ed1167cb21",
+                "reference": "db69d8e67b99570b16e8cd5f78c423ed1167cb21",
+                "shasum": ""
+            },
+            "require": {
+                "neomerx/cors-psr7": "^1.0",
+                "php": "^5.5 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.5",
+                "zendframework/zend-diactoros": "^1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tuupola\\Middleware\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mika Tuupola",
+                    "email": "tuupola@appelsiini.net",
+                    "homepage": "http://www.appelsiini.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PSR-7 CORS Middleware",
+            "homepage": "https://github.com/tuupola/cors-middleware",
+            "keywords": [
+                "cors",
+                "middleware",
+                "slim"
+            ],
+            "time": "2016-08-12T13:12:58+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -1091,6 +1367,68 @@
                 "psr-7"
             ],
             "time": "2017-01-23T22:59:03+00:00"
+        },
+        {
+            "name": "zircote/swagger-php",
+            "version": "2.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zircote/swagger-php.git",
+                "reference": "b0b136e3c51c8b05d78a0ea3f1b60cd331cc3544"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/b0b136e3c51c8b05d78a0ea3f1b60cd331cc3544",
+                "reference": "b0b136e3c51c8b05d78a0ea3f1b60cd331cc3544",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "*",
+                "php": ">=5.6",
+                "symfony/finder": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8 <=5.6",
+                "squizlabs/php_codesniffer": ">=2.7",
+                "zendframework/zend-form": "<2.8"
+            },
+            "bin": [
+                "bin/swagger"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Swagger\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Allen",
+                    "email": "zircote@gmail.com",
+                    "homepage": "http://www.zircote.com"
+                },
+                {
+                    "name": "Bob Fanger",
+                    "email": "bfanger@gmail.com",
+                    "homepage": "http://bfanger.nl"
+                }
+            ],
+            "description": "Swagger-PHP - Generate interactive documentation for your RESTful API using phpdoc annotations",
+            "homepage": "https://github.com/zircote/swagger-php/",
+            "keywords": [
+                "api",
+                "json",
+                "rest",
+                "service discovery"
+            ],
+            "time": "2017-02-22T23:16:25+00:00"
         }
     ],
     "packages-dev": [
